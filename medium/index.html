@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <title>Blog Mockup</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="main-container">
+
+        <header class="">
+            <p> </p>
+            <div class="header-left">
+
+            </div>
+            <div class="header-middle">
+                <img src="./blog-logo.png" alt="Blog Logo"
+                    class="img-blog-logo">
+            </div>
+            <div class="header-right">
+                <p>Follow</p>
+                <p class="login-links">Sign-in / Sign-up</p>
+                <svg focusable="false" width="24px" height="24px"
+                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path fill="#9AA0A6"
+                        d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5
+                        6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5
+                        4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5
+                        9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z">
+                    </path>
+                </svg>
+            </div>
+
+        </header>
+
+        <div class="post-meta-container">
+
+            <div class="meta-image">
+                <img src="./profile-icon.png" alt="profile photo"
+                    class="profile-img">
+            </div>
+
+            <div class="meta-content">
+                <div class="line-one">
+                    <p class="author">TJ Holowaychuk</p>
+                    <p class="follow-link">Follow</p>
+                </div>
+                <p class="post-meta">
+                    Code. Photography. Art.<br/>
+                        Jan 17, 2016 · 6 min read
+                    </p>
+                </div>
+
+
+            </div>
+
+            <div class="post">
+
+                <div class="post-title">
+                    <p class="post-title-p">Introducing Apex Ping</p>
+                </div>
+
+                <div class="post-content">
+
+                    <p class="post-content-text">
+                        I'd like to introduce <b><u>Apex Ping</u>!</b>
+                        A minimalistic, but
+                        powerful uptime &
+                        performance monitoring service for websites and APIs. In
+                        this post I'll cover
+                        features of Apex Ping, why I chose to build it first,
+                        and a
+                        few things I learned
+                        in the process. In future posts I'll be detailing the
+                        implementation for anyone
+                        who is curious.
+                        <br />
+                        <br />
+                        I soft-launched Ping about a month ago, built almost
+                        100% on AWS Lambda,
+                        with 500 users it has already detected over a million
+                        errors, and performed
+                        over 25 million checks. Big thanks to the early adopters
+                        who have checked it
+                        out!
+
+                    </p>
+
+                    <p class="post-content-img"><img src="./image1.png"
+                            alt="image-1" class="post-image"></p>
+                    <p class="sub-section-1">The Product</p>
+                    <p class="post-content-text">
+                        I've seen first-hand how embarrassing it can be when
+                        customers find out
+                        your product is having issues before you do, naturally
+                        this can translate to
+                        customers bailing on your product. Ensuring your site,
+                        app, or API is stable
+                        and performant is critical.
+                        <br />
+                        <br />
+                        Apex Ping helps by making sure your team is notified
+                        when there's a
+                        performance regression, or when your end-point is
+                        down
+                        or unresponsive.
+                        Often people rely on "it works for me", but Apex
+                        Ping's
+                        reporting can help
+                        uncover the full story.
+                    </p>
+
+                    <p class="sub-section">Powerful Monitoring</p>
+                    <p class="post-content-text">
+                        Unlike some other uptime monitoring services, which
+                        only
+                        support HEAD
+                        requests, Apex Ping support header fields and bodies
+                        as
+                        well. This allows
+                        you to test APIs, caching behaviour, and serving
+                        time,
+                        as well as the typical
+                        connection latency.
+                        The checks listing displays the uptime, mean
+                        response,
+                        Apdex score, and
+                        Adpex score throughout the day, week, or month. The
+                        Apdex score
+                        generalizes the user experience, summarizing
+                        response
+                        time satisfaction and
+                        error responses.
+                    </p>
+                    <p class="post-content-img"><img src="./image2.png"
+                            alt="image-2" class="post-image"></p>
+                    <p class="img-label">Checks overview</p>
+
+                    <p class="sub-section">Global Checks</p>
+                    <p class="post-content-text">
+                        Requests or "checks" are performed from a number of
+                        selectable POPS (Point
+                        of Presence), giving you a glance at the customer
+                        experience all over the
+                        world. Hovering a POP provides you with the
+                        breakdown,
+                        and coloring
+                        indicates their relative health so you can instantly
+                        see
+                        if a region's
+                        availability or performance is degraded.
+                    </p>
+                    <p class="post-content-img"><img src="./image3.png"
+                            alt="image-3" class="post-image"></p>
+                    <p class="img-label">Geographical view</p>
+
+                    <p class="sub-section">Latency Distribution</p>
+                    <p class="post-content-text">
+                        When latency is a reflection of the user-experience,
+                        it's important not to
+                        ignore the outliers. The Latency view provides you
+                        with
+                        an intuitive look at
+                        distribution throughout the selected time period,
+                        where
+                        the intensity of the
+                        heatmap represents the number of check's within the
+                        given duration.
+                    </p>
+
+                    <p class="post-content-img"><img src="./image4.png"
+                            alt="image-4" class="post-image"></p>
+                    <p class="img-label">Checks overview</p>
+
+                    <p class="sub-section">Errors & Apdex</p>
+                    <p class="post-content-text">
+                        The Apdex (Application Performance Index) score
+                        quantifies the user-
+                        experience based on a configured target latency. It
+                        effectively lets you know
+                        how far you are from hitting your mark, you should
+                        strive for a perfect 1.0!
+                    </p>
+
+                    <p class="post-content-img"><img src="./image5.png"
+                            alt="image-5" class="post-image"></p>
+
+
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+
+
+                    <p class="sub-section">IAM Policies</p>
+                    <p class="post-content-text">
+                        AWS uses IAM policies to permit access to various
+                        operations against
+                        resources, such as allowing read-write access to
+                        DynamoDB.
+                        <br />
+                        <br />
+                        Up now allows you to specify additional policy
+                        statements for the Lambda
+                        function's role as shown in the following snippet.
+                        Re-deploy and your
+                        permissions are applied !
+                    </p>
+
+                    <pre>
+<code>
+{
+  " name" : "myapp", 
+  " lambda": {
+    "memory": 1024,
+    "policy" : [
+      {
+        "Effect" : "Allow" , 
+        "Resource" : "*", 
+        "Action": [ 
+          "dynamodb: Get*", 
+          "dynamodb: List*", 
+          "dynamodb: PutItem",
+          "dynamodb: DeleteItem"
+        ]
+      }
+    ]
+  }
+}
+
+</code>
+</pre>
+                    <p class="blockquote">
+                        <i>Note that if you previously manually altered the
+                            function policy in the AWS
+                            console, these permissions should be moved to the
+                        </i> <code class="inline-code"> up.json </code> .
+                    </p>
+
+                    <p class="sub-section">Static Files for Dynamic Applications
+                    </p>
+                    <p class="post-content-text">
+                        Previously an Up project was either strictly static, or
+                        dynamic—now you can
+                        utilize static file serving for dynamic apps, Up will
+                        check if the file exists
+                        before passing control to your application.
+                        <br />
+                        <br />
+                        Pass the dir of your static files, with an optional
+                        prefix used on the client-
+                        side for requesting. In the following example
+                        <code class="inline-code"> /static/css/stvle.css </code>
+                        would
+                        resolve to <code class="inline-code">
+                            ./public/css/style.css </code>.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <br />
+        <br />
+        <br />
+        <br />
+    </body>
+</html>
