@@ -212,25 +212,25 @@
                         permissions are applied !
                     </p>
 
-                    <pre>
+<pre>
 <code>
 {
-  " name" : "myapp", 
-  " lambda": {
+" name" : "myapp", 
+" lambda": {
     "memory": 1024,
     "policy" : [
-      {
+    {
         "Effect" : "Allow" , 
         "Resource" : "*", 
         "Action": [ 
-          "dynamodb: Get*", 
-          "dynamodb: List*", 
-          "dynamodb: PutItem",
-          "dynamodb: DeleteItem"
+        "dynamodb: Get*", 
+        "dynamodb: List*", 
+        "dynamodb: PutItem",
+        "dynamodb: DeleteItem"
         ]
-      }
+    }
     ]
-  }
+}
 }
 
 </code>
